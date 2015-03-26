@@ -1,10 +1,11 @@
-[] setup precommit-hook
+[] test es6 modules
 [] setup karma to generate unit-test & coverage
-[] use sourcelabs to test
 [] setup travis build
 [] single javascript bundle
+[] use sourcelabs to test
 
 ---
 
+[x] setup precommit-hook
 [x] setup eslint
 [x] setup livereload
