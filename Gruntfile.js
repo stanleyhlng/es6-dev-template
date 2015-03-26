@@ -20,6 +20,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('dev', [
         'clean',
+        'eslint',
         'babel',
         'copy',
         'connect',
