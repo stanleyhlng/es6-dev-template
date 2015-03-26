@@ -2,3 +2,5 @@
 [] use sourcelabs to test
 [] setup travis build
 [] single javascript bundle
+
+[x] setup livereload

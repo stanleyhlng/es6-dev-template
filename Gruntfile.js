@@ -17,4 +17,13 @@ module.exports = function(grunt) {
         'copy'
         ]
     );
+
+    grunt.registerTask('dev', [
+        'clean',
+        'babel',
+        'copy',
+        'connect',
+        'watch'
+        ]
+    );
 };
