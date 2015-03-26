@@ -4,6 +4,11 @@ es6-dev-template
 Template for ES6 development.
 
 ---
+ESLINT
+* https://babeljs.io/docs/learn-es6/
+* http://eslint.org/docs/rules/
+
+---
 
 http://jsmodules.io/
 https://github.com/requirejs/cajon

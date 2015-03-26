@@ -2,6 +2,6 @@
 [] use sourcelabs to test
 [] setup travis build
 [] single javascript bundle
-[] setup eslint
 
+[x] setup eslint
 [x] setup livereload
