@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Template for ES6 development",
   "main": "grunt",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "",
   "license": "MIT",
   "devDependencies": {
@@ -12,6 +11,7 @@
     "grunt-babel": "^4.0.0",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-copy": "^0.8.0"
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1"
   }
 }

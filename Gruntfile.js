@@ -2,44 +2,19 @@ module.exports = function(grunt) {
     'use strict';
 
     var config = {
-        
+        ENV: grunt.option('env') || 'dev',
+        pkg: grunt.file.readJSON('package.json'),
+        workspace: process.cwd()
     };
 
-    grunt.initConfig({
-        babel: {
-            options: {
-                modules: 'common',
-                sourceMap: true
-            },
-            build: {
-                files: [{
-                    expand: true,
-                    cwd: 'src/',
-                    src: [
-                        '**/*.js'
-                    ],
-                    dest: 'dist/'
-                }]
-            }
-        },
-        clean: [
-            'dist'
-        ],
-        copy: {
-            main: {
-                cwd: './src/sample',
-                src: 'index.html',
-                dest: 'dist/',
-                expand: true,
-                flatten: true,
-                filter: 'isFile'
-            }
-        }
-    });
+    grunt.initConfig(config);
 
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-babel');
+    grunt.loadTasks('tasks');
 
-    grunt.registerTask('default', ['babel', 'copy']);
+    grunt.registerTask('default', [
+        'clean',
+        'babel',
+        'copy'
+        ]
+    );
 };
