@@ -6,10 +6,10 @@ module.exports = function (grunt) {
     grunt.config('copy', {
         index: {
             cwd: '<%= workspace %>/src/sample',
-            src: 'index.html',
+            src: '**/*.html',
             dest: 'dist/',
             expand: true,
-            flatten: true,
+            flatten: false,
             filter: 'isFile'
         },
         src: {
