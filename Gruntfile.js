@@ -15,18 +15,21 @@ module.exports = function(grunt) {
         'eslint'
     ]);
 
+    grunt.registerTask('compile', [
+        'babel',
+        'copy',
+    ]);
+
     grunt.registerTask('default', [
         'clean',
-        'babel',
-        'copy'
+        'compile'
         ]
     );
 
     grunt.registerTask('dev', [
         'clean',
         'lint',
-        'babel',
-        'copy',
+        'compile',
         'connect',
         'watch'
         ]
