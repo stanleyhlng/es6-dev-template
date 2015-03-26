@@ -11,6 +11,10 @@ module.exports = function(grunt) {
 
     grunt.loadTasks('tasks');
 
+    grunt.registerTask('lint', [
+        'eslint'
+    ]);
+
     grunt.registerTask('default', [
         'clean',
         'babel',
@@ -20,7 +24,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('dev', [
         'clean',
-        'eslint',
+        'lint',
         'babel',
         'copy',
         'connect',

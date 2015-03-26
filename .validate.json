@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "lint": "./node_modules/.bin/grunt lint"
+  },
+  "pre-commit": ["lint", "validate", "test"]
+}

@@ -19,6 +19,7 @@
     "grunt-contrib-eslint": "0.0.5",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-eslint": "^9.0.0",
+    "precommit-hook": "^2.0.1",
     "time-grunt": "^1.1.0"
   }
 }
