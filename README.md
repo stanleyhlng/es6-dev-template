@@ -11,6 +11,8 @@ Template for ES6 development. (WIP)
 
 ---
 
+[![image](https://raw.githubusercontent.com/wiki/stanleyhlng/es6-dev-template/assets/es6-dev-template.gif)](https://raw.githubusercontent.com/wiki/stanleyhlng/es6-dev-template/assets/es6-dev-template.gif)
+
 http://showterm.io/ef633b2b77486992ed412#show
 
 ---
