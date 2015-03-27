@@ -4,9 +4,10 @@
   "description": "Template for ES6 development",
   "main": "grunt",
   "scripts": {
+    "lint": "./node_modules/.bin/grunt lint",
     "test": "./node_modules/.bin/grunt test"
   },
-  "author": "",
+  "author": "Stanley Ng <stanleyhlng77-dev@yahoo.com.hk",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^4.7.16",
