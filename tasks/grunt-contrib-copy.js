@@ -4,13 +4,23 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.config('copy', {
-        main: {
-            cwd: './src/sample',
-            src: 'index.html',
+        index: {
+            cwd: '<%= workspace %>/src/sample',
+            src: '**/*.html',
             dest: 'dist/',
             expand: true,
-            flatten: true,
+            flatten: false,
             filter: 'isFile'
+        },
+        src: {
+            cwd: '<%= workspace %>/build/src',
+            src: [
+                '**/*.js',
+                '**/*.map'
+            ],
+            dest: 'dist/',
+            expand: true,
+            flatten: false
         }
     });
 };

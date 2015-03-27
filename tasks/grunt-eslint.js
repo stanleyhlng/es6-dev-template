@@ -6,12 +6,13 @@ module.exports = function (grunt) {
     grunt.config('eslint', {
         options: {
             configFile: '.eslintrc',
-            rulesPaths: [
-                'node_modules/eslint-plugin-import/lib/rules'
+            rulePaths: [
+                'node_modules/eslint-plugin-import/lib/rules',
+                'node_modules/eslint-plugin-mocha/lib/rules'
             ]
         },
         all: [
-            'src/**/*.js'
+            'src/**/*.es6'
         ]
     });
 };

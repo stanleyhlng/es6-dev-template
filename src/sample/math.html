@@ -2,13 +2,15 @@
 <html lang='en'>
     <head>
         <meta charset='UTF-8' />
-        <title>ES6 Modules Babel</title>
+        <title>math.es6</title>
     </head>
     <body>
-        <h1>ES6 Modules Babel #3</h1>
+        <h1>math.es6</h1>
         <script src='../bower_components/cajon/cajon.js'></script>
         <script>
-            require(['app']);
+            require(['modules/math'], function (math) {
+                console.log('2π = ' + math.sum(math.pi, math.pi));
+            });
         </script>
     </body>
 </html>

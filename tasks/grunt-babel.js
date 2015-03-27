@@ -5,18 +5,35 @@ module.exports = function (grunt) {
 
     grunt.config('babel', {
         options: {
-            modules: 'common',
+            modules: 'amd',
             sourceMap: true
         },
-        build: {
+        src: {
             files: [
                 {
                     expand: true,
                     cwd: 'src/',
                     src: [
-                        '**/*.js'
+                        '**/*.es6'
                     ],
-                    dest: 'dist/'
+                    dest: 'build/src/',
+                    ext: '.js'
+                }
+            ],
+        },
+        test: {
+            options: {
+                sourceMap: false
+            },
+            files: [
+                {
+                    expand: true,
+                    cwd: 'test/',
+                    src: [
+                        '**/*.spec.es6'
+                    ],
+                    dest: 'build/test/',
+                    ext: '.spec.js'
                 }
             ]
         }

@@ -9,7 +9,8 @@ module.exports = function (grunt) {
         },
         src: {
             files: [
-                'src/**/*.*'
+                'src/**/*.*',
+                'test/**/*.*'
             ],
             tasks: [
                 'default'
