@@ -48,7 +48,7 @@ module.exports = function(config) {
         },
 
         {
-            pattern: 'test/test-cajon.js',
+            pattern: 'test/bootstrap.js',
             included: true
         }
     ],

@@ -5,7 +5,7 @@ module.exports = function (grunt) {
 
     grunt.config('babel', {
         options: {
-            modules: 'amd',
+            modules: 'common',
             sourceMap: true
         },
         src: {

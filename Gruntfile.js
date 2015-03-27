@@ -32,18 +32,21 @@ module.exports = function(grunt) {
         'karma:unit'
     ]);
 
-    grunt.registerTask('default', [
-        'clean',
-        'compile',
-        'unit'
-        ]
-    );
-
     grunt.registerTask('dev', [
         'clean',
         'lint',
         'compile',
         'unit',
+        ]
+    );
+
+    grunt.registerTask('default', [
+        'dev'
+        ]
+    );
+
+    grunt.registerTask('serve', [
+        'dev',
         'connect',
         'watch'
         ]

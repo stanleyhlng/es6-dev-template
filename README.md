@@ -12,8 +12,13 @@ Template for ES6 development. (WIP)
 ---
 QUICK START
 * $npm install
+
 * $./node_modules/.bin/bower install
+
 * $./node_modules/.bin/grunt dev
+
+--OR--
+
+* $./node_modules/.bin/grunt serve
+
 * $open a browser and enable developer tool, visit http://localhost:3000
-
-
