@@ -7,7 +7,7 @@ module.exports = function (grunt) {
         options: {
             debug: true,
             coverageDir: '<%= workspace %>/build/artifacts/coverage/mocha/',
-            dryRun: true,
+            dryRun: false,
             force: true,
             recursive: true
         }
