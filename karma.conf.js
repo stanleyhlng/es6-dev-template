@@ -16,41 +16,36 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
         // {
-        //     pattern: 'bower_components/cajon/cajon.js',
-        //     included: true
-        // },
-
-        {
-            pattern: 'build/src/**/*.js',
-            included: false
-        },
-
-        {
-            pattern: 'build/src/**/*.js.map',
-            included: false
-        },
-
-        {
-            pattern: 'build/test/unit/**/*.spec.js',
-            included: false
-        },
-
-        //'node_modules/babel-core/browser-polyfill.js',
-
-        // {
-        //     pattern: 'src/**/foo.es6',
+        //     pattern: 'build/src/**/*.js',
         //     included: false
         // },
         //
         // {
-        //     pattern: 'test/unit/**/foo.spec.es6',
-        //     included: true
-        // },
-
-        // {
-        //     pattern: 'test/unit/**/bdd.spec.js',
+        //     pattern: 'build/src/**/*.js.map',
         //     included: false
         // },
+        //
+        // {
+        //     pattern: 'build/test/unit/**/*.spec.js',
+        //     included: false
+        // },
+
+        'node_modules/babel-core/browser-polyfill.js',
+
+        {
+            pattern: 'src/**/*.es6',
+            included: false
+        },
+
+        {
+            pattern: 'test/unit/**/*.spec.es6',
+            included: false
+        },
+
+        {
+            pattern: 'test/unit/**/bdd.spec.js',
+            included: false
+        },
 
         {
             pattern: 'test/test-cajon.js',
@@ -67,14 +62,9 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        'build/src/**/*.js': ['coverage']
-        // 'src/**/*.es6': ['babel'],
-        // 'test/**/*.spec.es6': ['babel']
-    },
-
-
-    commonRequirePreprocessor: {
-        appDir: '.'
+        //'build/src/**/*.js': ['coverage']
+        'src/**/*.es6': ['babel', 'coverage'],
+        'test/**/*.spec.es6': ['babel']
     },
 
 
@@ -129,6 +119,7 @@ module.exports = function(config) {
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     //browsers: process.env.TRAVIS ? ['Firefox'] : ['PhantomJS'],
     browsers: ['PhantomJS'],
+
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
