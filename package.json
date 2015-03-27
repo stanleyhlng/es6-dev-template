@@ -1,10 +1,10 @@
 {
   "name": "es6-dev-template",
-  "version": "1.0.0",
+  "version": "1.0.1-0",
   "description": "Template for ES6 development",
   "main": "grunt",
   "scripts": {
-      "test": "./node_modules/.bin/grunt test"
+    "test": "./node_modules/.bin/grunt test"
   },
   "author": "",
   "license": "MIT",
@@ -27,6 +27,7 @@
     "grunt-karma": "^0.10.1",
     "grunt-mkdir": "^0.1.2",
     "grunt-port-pick": "^1.5.1",
+    "grunt-release": "^0.12.0",
     "karma": "^0.12.31",
     "karma-babel-preprocessor": "^4.0.1",
     "karma-cajon": "0.0.1",
