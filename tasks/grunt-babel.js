@@ -30,10 +30,10 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: 'test/',
                     src: [
-                        '**/*.es6'
+                        '**/*.spec.es6'
                     ],
                     dest: 'build/test/',
-                    ext: '.js'
+                    ext: '.spec.js'
                 }
             ]
         }

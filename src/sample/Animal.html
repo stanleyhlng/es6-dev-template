@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8' />
+        <title>Animal.es6</title>
+    </head>
+    <body>
+        <h1>Animal.es6</h1>
+        <script src='../bower_components/cajon/cajon.js'></script>
+        <script>
+            require(['modules/Animal'], function (Animal) {
+                var animal = new Animal();
+                console.log('animal.name()', animal.name());
+            });
+        </script>
+    </body>
+</html>

@@ -10,7 +10,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'chai'],
+    frameworks: ['mocha', 'cajon', 'chai'],
 
 
     // list of files / patterns to load in the browser
@@ -19,25 +19,43 @@ module.exports = function(config) {
         //     pattern: 'bower_components/cajon/cajon.js',
         //     included: true
         // },
-        //'node_modules/babel-core/browser-polyfill.js',
 
         {
-            pattern: 'src/**/foo.js',
-            included: true
+            pattern: 'build/src/**/*.js',
+            included: false
         },
 
-        //{pattern: 'test/unit/**/*.spec.js', included: true}
+        {
+            pattern: 'build/src/**/*.js.map',
+            included: false
+        },
+
+        {
+            pattern: 'build/test/unit/**/*.spec.js',
+            included: false
+        },
+
+        //'node_modules/babel-core/browser-polyfill.js',
+        
         // {
-        //     pattern: 'test-cajon.js',
+        //     pattern: 'src/**/foo.es6',
+        //     included: false
+        // },
+        //
+        // {
+        //     pattern: 'test/unit/**/foo.spec.es6',
         //     included: true
         // },
 
+        // {
+        //     pattern: 'test/unit/**/bdd.spec.js',
+        //     included: false
+        // },
+
         {
-            pattern: 'test/unit/**/foo.spec.js',
+            pattern: 'test/test-cajon.js',
             included: true
         }
-
-        //'test-main.js'
     ],
 
 
@@ -49,7 +67,9 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        'src/**/*.js': ['babel', 'coverage']
+        'build/**/*.js': ['coverage']
+        // 'src/**/*.es6': ['babel'],
+        // 'test/**/*.spec.es6': ['babel']
     },
 
 
@@ -64,7 +84,7 @@ module.exports = function(config) {
             sourceMap: 'inline'
         },
         filename: function(file) {
-            return file.originalPath.replace(/\.js$/, '.es5.js');
+            return file.originalPath.replace(/\.es6$/, '.js');
         },
         sourceFileName: function(file) {
             return file.originalPath;
@@ -75,12 +95,18 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress', 'tap', 'coverage'],
+    reporters: ['mocha', 'coverage'],
 
 
-    tapReporter: {
-        outputFile: 'results.tap'
+    mochaReporter: {
+        output: 'autowatch'
     },
+
+
+    // tapReporter: {
+    //     outputFile: 'results.tap'
+    // },
+
 
     // web server port
     port: 9876,
