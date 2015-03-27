@@ -44,3 +44,4 @@ http://marvinosswald.de/es6-dev-template/
 http://eslint.org/docs/user-guide/configuring
 https://github.com/wallabyjs/public/issues/37#issuecomment-77685053
 https://github.com/kjbekkelund/karma-requirejs/blob/master/test/test-main.js
+https://github.com/ModuleLoader/es6-module-loader
