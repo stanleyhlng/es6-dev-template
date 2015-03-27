@@ -10,6 +10,10 @@ Template for ES6 development. (WIP)
 [![devDependency Status](https://img.shields.io/david/dev/stanleyhlng/es6-dev-template.svg?style=flat-square)](https://david-dm.org/stanleyhlng/es6-dev-template#info=devDependencies)
 
 ---
+
+http://showterm.io/ef633b2b77486992ed412#show
+
+---
 QUICK START
 * $npm install
 
