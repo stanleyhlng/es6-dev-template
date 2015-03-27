@@ -14,10 +14,10 @@ Template for ES6 development. (WIP)
 ---
 ### Walkthrough
 
-#### Running ES6 in Browser
+> Running ES6 in Browser
 [![image](https://raw.githubusercontent.com/wiki/stanleyhlng/es6-dev-template/assets/images/es6-dev-template-browser.gif)](https://raw.githubusercontent.com/wiki/stanleyhlng/es6-dev-template/assets/images/es6-dev-template-browser.gif)
 
-#### Running ES6 in Node
+> Running ES6 in Node**
 [![image](https://raw.githubusercontent.com/wiki/stanleyhlng/es6-dev-template/assets/images/es6-dev-template-node.gif)](http://showterm.io/ef633b2b77486992ed412#slow)
 
 ---
