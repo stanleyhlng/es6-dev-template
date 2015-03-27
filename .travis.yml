@@ -1,3 +1,7 @@
+after_success:
+  - git checkout .validate.json
+before_script:
+  - ./node_modules/.bin/bower install
 language: node_js
 matrix:
   allow_failures:
