@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Template for ES6 development",
   "main": "grunt",
-  "scripts": {},
+  "scripts": {
+      "test": "./node_modules/.bin/grunt test"
+  },
   "author": "",
   "license": "MIT",
   "devDependencies": {
