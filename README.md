@@ -2,6 +2,8 @@ es6-dev-template
 ================
 
 [![Build Status](https://img.shields.io/travis/stanleyhlng/es6-dev-template.svg?style=flat-square)](https://travis-ci.org/stanleyhlng/es6-dev-template)
+[![Dependency Status](https://img.shields.io/david/stanleyhlng/es6-dev-template.svg?style=flat-square)](https://david-dm.org/stanleyhlng/es6-dev-template)
+[![devDependency Status](https://img.shields.io/david/dev/stanleyhlng/es6-dev-template.svg?style=flat-square)](https://david-dm.org/stanleyhlng/es6-dev-template#info=devDependencies)
 
 Template for ES6 development.
 
