@@ -34,7 +34,8 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', [
         'clean',
-        'compile'
+        'compile',
+        'unit'
         ]
     );
 
@@ -42,6 +43,7 @@ module.exports = function(grunt) {
         'clean',
         'lint',
         'compile',
+        'unit',
         'connect',
         'watch'
         ]
