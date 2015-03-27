@@ -1,6 +1,8 @@
 es6-dev-template
 ================
 
+[![Build Status](https://img.shields.io/travis/stanleyhlng/es6-dev-template.svg?style=flat-square)](https://travis-ci.org/stanleyhlng/es6-dev-template)
+
 Template for ES6 development.
 
 ---
