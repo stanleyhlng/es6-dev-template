@@ -1,6 +1,6 @@
 after_success:
 - "git checkout .validate.json"
-- "find build/artifacts/coverage/ -name 'lcov.info' | xargs -I {} cat {} | ./node_modules/coveralls/bin/coveralls.js"
+- "./node_modules/.bin/grunt coveralls"
 before_script:
 - "./node_modules/.bin/bower install"
 deploy:
