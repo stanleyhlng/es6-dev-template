@@ -1,10 +1,15 @@
-sudo: false
+deploy:
+  provider: npm
+  email: stanleyhlng77-dev@yahoo.com.hk
+  api_key:
+    secure: ewTFdXr1A9mFeEM+SqX6phb9A+vezZYUzHzlfBpBq9WywhFDLYY1oHcaP7d179W4l8Osg50NlJsXstKLq0NfoMTOMj5rVqn4ljajwkbASFiyO+5zWWmHNJ4Y+VuQJct3zlcPbEmwbr+BrOqIX5v3ztzK5JVMKK89Kp+34KE/LnA=
 language: node_js
 matrix:
-    allow_failures:
-        - node_js: "0.13"
+  allow_failures:
+  - node_js: '0.13'
 node_js:
-    - "iojs"
-    - "0.13"
-    - "0.12"
-    - "0.10"
+- iojs
+- '0.13'
+- '0.12'
+- '0.10'
+sudo: false
