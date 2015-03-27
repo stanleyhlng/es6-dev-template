@@ -1,6 +1,6 @@
 {
-  "name": "es6",
-  "version": "0.0.0",
+  "name": "es6-dev-template",
+  "version": "1.0.0",
   "authors": [
     "stanleyn <stanleyhlng@yahoo.com.hk>"
   ],
@@ -14,8 +14,6 @@
     "tests"
   ],
   "devDependencies": {
-    "requirejs": "~2.1.16",
-    "browser-commonjs": "~0.0.2",
     "cajon": "~0.2.7"
   }
 }
