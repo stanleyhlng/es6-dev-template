@@ -1,7 +1,12 @@
 after_success:
-  - git checkout .validate.json
+- git checkout .validate.json
 before_script:
-  - ./node_modules/.bin/bower install
+- "./node_modules/.bin/bower install"
+deploy:
+  provider: npm
+  email: stanleyhlng77-dev@yahoo.com.hk
+  api_key:
+    secure: ay9mVvDcWpxTgwHQUeRwwMHieuol65sgAc67Xq4yM/Xl7EOajKVo6f5QITP7aaxiolazbPlMLvqw6kcV7UE+CpZ//KdgADLhxK3YeNBRpl3tdw6CzZ3gHxm261eygnKAXcN4ngobsgw+iTptGmH3LlZCL9u9uXBaYY+wKtDz7TY=
 language: node_js
 matrix:
   allow_failures:
