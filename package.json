@@ -1,6 +1,6 @@
 {
   "name": "es6-dev-template",
-  "version": "1.0.1-3",
+  "version": "1.0.1-4",
   "description": "Template for ES6 development",
   "main": "grunt",
   "scripts": {
