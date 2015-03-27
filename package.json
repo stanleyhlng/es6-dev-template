@@ -8,6 +8,10 @@
     "test": "./node_modules/.bin/grunt test"
   },
   "author": "Stanley Ng <stanleyhlng77-dev@yahoo.com.hk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stanleyhlng/es6-dev-template"
+  },
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^4.7.16",
@@ -48,5 +52,9 @@
     "requirejs": "^2.1.16",
     "time-grunt": "^1.1.0",
     "webpack": "^1.7.3"
-  }
+  },
+  "keywords": [
+      "es6",
+      "template"
+  ]
 }
