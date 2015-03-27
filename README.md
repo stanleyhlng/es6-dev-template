@@ -8,6 +8,13 @@ es6-dev-template
 Template for ES6 development.
 
 ---
+QUICK START
+* $npm install
+* $./node_modules/.bin/bower install
+* $./node_modules/.bin/grunt dev
+* $open a browser and enable developer tool, visit http://localhost:3000
+
+---
 ESLINT
 * https://babeljs.io/docs/learn-es6/
 * http://eslint.org/docs/rules/
