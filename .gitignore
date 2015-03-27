@@ -7,4 +7,4 @@ results.tap
 build/
 .jshintrc
 .jshintignore
-.validate.json
+docs/
