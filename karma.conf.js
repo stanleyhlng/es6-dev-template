@@ -36,7 +36,7 @@ module.exports = function(config) {
         },
 
         //'node_modules/babel-core/browser-polyfill.js',
-        
+
         // {
         //     pattern: 'src/**/foo.es6',
         //     included: false
@@ -67,7 +67,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        'build/**/*.js': ['coverage']
+        'build/src/**/*.js': ['coverage']
         // 'src/**/*.es6': ['babel'],
         // 'test/**/*.spec.es6': ['babel']
     },
@@ -103,9 +103,9 @@ module.exports = function(config) {
     },
 
 
-    // tapReporter: {
-    //     outputFile: 'results.tap'
-    // },
+    tapReporter: {
+        outputFile: 'results.tap'
+    },
 
 
     // web server port

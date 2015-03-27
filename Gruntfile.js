@@ -20,6 +20,18 @@ module.exports = function(grunt) {
         'copy',
     ]);
 
+    grunt.registerTask('test', [
+        'clean',
+        'compile',
+        'unit'
+    ]);
+
+    grunt.registerTask('unit', [
+        'mkdir:unit',
+        'portPick:karma',
+        'karma:unit'
+    ]);
+
     grunt.registerTask('default', [
         'clean',
         'compile'
