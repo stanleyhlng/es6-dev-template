@@ -1,8 +1,12 @@
 after_success:
-- "git checkout .validate.json"
+- git checkout .validate.json
 - "./node_modules/.bin/grunt coveralls"
 before_script:
 - "./node_modules/.bin/bower install"
+env:
+  global:
+  - secure: igPFcwRxfPNWYHVhFLMHRtvX6t6pka0LcIaqk+pS+suxn6QNNGdKB9IGkEBeLC+5HGXbUE26FLC1b1NVF6zUR7NaiZheqvPJoxYbF0ZW/J0a3eeidcTN2joIqHdTp3omEZbf1Q+Q5crOA87WU1ho57zmHLpehVjiKEC3LrRluKo=
+  - secure: dbkPPrecfD3uNfniGlTX8mPz6GSgzEaJ6xIfpxVH01I2dHNDHOMgBWnPCqOqzWZEWBak0jKSutaC0GmulpTj9cEB/r8DF+u1LDWq7q86AtWgoqIGCu30UWeRVKomClBWpg8rndfxfyRgr6IryzWITnbruvlDr6ejRbXg/k6Lcj0=
 language: node_js
 matrix:
   allow_failures:
